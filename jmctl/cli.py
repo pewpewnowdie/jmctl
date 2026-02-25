@@ -29,7 +29,7 @@ def main():
       validate=lambda x: True if x.strip() else "Username cannot be empty"
     ).ask()
 
-    password = questionary.text(
+    password = questionary.password(
       "Password:",
       validate=lambda x: True if x.strip() else "Username cannot be empty"
     ).ask()
