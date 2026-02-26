@@ -96,7 +96,7 @@ def main():
   upload_token = start_resp.get("upload_token")
 
   print("[dim]Running Jmeter...[/dim]\n") 
-  result = run(jmx, upload_token)
+  result = run(jmx, run_id)
   try:
     stop_resp = stop_test(run_id, result, upload_token, access_token)
     if not stop_resp:
